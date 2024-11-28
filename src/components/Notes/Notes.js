@@ -8,7 +8,14 @@ const Notes = (props) => {
   return (
     <div className="notes">
       {notes.length === 0 ? (
+        <div>
         <p>Notes you add appear here.</p>
+        <p style={{ textAlign: 'center'}}> - </p>
+        <p style={{ textAlign: 'center', fontWeight: 'bold' }}>
+        Made by{' '}
+        <span style={{ textDecoration: 'underline' }}>KM Leshike</span>
+      </p>
+        </div>
       ) : (
         notes.map((note, index) => (
           <Note
