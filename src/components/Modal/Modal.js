@@ -83,7 +83,7 @@ const [hasCursor, setHasCursor] = useState(false);
               </button>
             </div>
           </form>
-          < Form selectedNote={selectedNote} toggleModal={toggleModal} edit />
+          < Form selectedNote={selectedNote} toggleModal={toggleModal} editNote={editNote} edit />
         </div>
       </div>
   );
